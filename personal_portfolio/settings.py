@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-*i@tds1-!a#t!!w&+xzuu-hh0&19+cp2b$+ve56lw!5gt%p$4_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['limitless-peak-38200.herokuapp.com']
+ALLOWED_HOSTS = ['limitless-peak-38200.herokuapp.com', 'www.clickanalytics.live']
 
 
 # Application definition
