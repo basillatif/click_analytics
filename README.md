@@ -1,10 +1,12 @@
 # clickanalytics.live
 # inspiration: https://realpython.com/get-started-with-django-1/
 
-# run locally:           python manage.py runserver
+# run locally:           
+# python manage.py runserver
 
 
-# initiate django shell: python manage.py shell
+# initiate django shell:
+# python manage.py shell
 
 
 #add a project
@@ -18,5 +20,8 @@
 #... )
 # >>> p1.save()
 
-#delete a project 
+#delete a project
+# Project.objects.filter(id=1).delete()
+
+
 #push to heroku: git push heroku main
