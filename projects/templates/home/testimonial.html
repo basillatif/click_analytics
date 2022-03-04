@@ -1,0 +1,46 @@
+{% load static %}
+<!-- Testimonial Slider Section -->
+<section id="testimonial" class="bg-danger py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Testimonial</h2>
+            </div>
+            <div class="col-12">
+                <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Slide Indicators -->
+                    <ol class="carousel-indicators">
+                        {% for testimonial in testimonials %}
+                        {% if forloop.first %}
+                            <li data-target="#testimonialCarousel" data-slide-to="{{forloop.counter0}}" class="active"></li>
+                        {% else %}
+                            <li data-target="#testimonialCarousel" data-slide-to="{{forloop.counter0}}"></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        {% for testimonial in testimonials %}
+                        <!-- Slide 1 -->
+                        <div class="carousel-item {% if forloop.first %} active{% endif %}">
+                            <div class="carousel-content">
+                                <div class="client-img"><img src="{{testimonial.image.url}}" alt="Testimonial Slider"></div>
+                                <h3>{{testimonial.name}} <br><span>{{testimonial.country}}</span></h3>
+                                <p class="col-md-8 offset-md-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                        <!-- Slider pre and next arrow -->
+                        <a class="carousel-control-prev text-white" href="#testimonialCarousel" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a class="carousel-control-next text-white" href="#testimonialCarousel" role="button" data-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Testimonial Slider Section -->

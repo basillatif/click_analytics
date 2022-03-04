@@ -1,3 +1,4 @@
 django
+Pillow==9.0.1
 gunicorn
 django_heroku

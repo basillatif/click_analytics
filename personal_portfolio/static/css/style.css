@@ -1,0 +1,168 @@
+/* Testimonial */
+.client-img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 4px solid #fff;
+    margin: 0px auto 20px;
+    border-radius: 100%;
+}
+.carousel-content {
+    padding: 50px 0px;
+}
+.carousel-content h3 span {
+    font-size: 17px;
+    font-weight: normal;
+    color: #e8e8e8;
+    text-transform: uppercase;
+}
+.client-img img {
+    width: 100%;
+}
+#testimonial {
+    text-align: center;
+    padding: 40px 0px;
+    color: #fff;
+}
+#testimonial .carousel-control-prev,
+#testimonial .carousel-control-next {
+    font-size: 36px;
+}
+#testimonial h2 {
+    font-size: 40px;
+    font-style: italic;
+    border-bottom: 1px solid #7fbdff;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+/* Project */
+
+#project {
+    text-align: center;
+    padding: 40px 0px;
+    color: rgb(0, 0, 0);
+}
+#project .carousel-control-prev,
+#project .carousel-control-next {
+    font-size: 36px;
+}
+#project h2 {
+    font-size: 40px;
+    font-style: italic;
+    border-bottom: 1px solid #7fbdff;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+/* CLient */
+
+section.our-team {
+    padding: 70px 0px;
+    background-color: #f2f9ff;
+    text-align: center;
+    color: #fff;
+}
+.our-team .member {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    border-radius: 100%;
+    border: 6px solid #ffffff;
+}
+.our-team h2 {
+    font-size: 36px;
+    color: #795548;
+    font-weight: normal;
+}
+
+.our-team .member:hover {
+    box-shadow: 0px 10px 0px 0px #795548;
+}
+.our-team .member .member-info {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.our-team .member .member-detail {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+.our-team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    right: 0;
+    height: 48px;
+    transition: bottom ease-in-out 0.4s;
+    text-align: center;
+}
+.our-team .member .social a {
+    margin: 0 10px;
+    display: inline-block;
+    color: #fff;
+}
+.our-team .member .social a:hover {
+    color: #cda45e;
+}
+.our-team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+.our-team .member:hover .member-info {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.83) 0%, rgba(0, 0, 0, 0.57) 20%, rgba(121, 85, 72, 0.09) 100%);
+    opacity: 1;
+    transition: 0.4s;
+}
+.our-team .member:hover .member-detail {
+    bottom: 80px;
+}
+.our-team .member:hover .social {
+    bottom: 10px;
+}
+
+/* footer */
+.contact{
+    padding: 4%;
+    height: 400px;
+}
+.col-md-3{
+    background: #ff9b00;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}

@@ -1,0 +1,34 @@
+{% load static %}
+    <!-- Our Team Section -->
+    <section class="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Our Client</h2>
+                </div>
+            </div>
+            <hr class="mb-5 mt-4">
+            <div class="row">
+                {% for client in clients %}
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <img style="width: 270px;height: 250px;" src="{{client.image.url}}" class="img-fluid" alt="" />
+                        <div class="member-info">
+                            <div class="member-detail">
+                                <h4>{{client.name}}</h4>
+                            </div>
+                            {% comment %} <div class="social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <hr class="mt-5">
+        </div>
+    </section>
+    <!-- End Our Team Section -->
