@@ -1,5 +1,5 @@
 # clickanalytics.live
-# inspiration: https://realpython.com/get-started-with-django-1/
+### inspiration: https://realpython.com/get-started-with-django-1/
 
 # run locally:           
 # python manage.py runserver
@@ -20,8 +20,13 @@
 #... )
 # >>> p1.save()
 
+
+# get a project
+# Project.objects.get()
+# Project.objects.get(title='Twitter API')
+
 #delete a project
 # Project.objects.filter(id=1).delete()
 
 
-#push to heroku: git push heroku main
+#### push to heroku: git push heroku main
